@@ -19,6 +19,15 @@ body,
   direction: ltr;
 }
 
+.global-video-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
 /* ========================================================================== 
    2. SCROLL CONTAINER
    ========================================================================== */

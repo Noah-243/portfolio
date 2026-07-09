@@ -191,7 +191,7 @@ function App() {
        animated text, background video and primary call-to-action.
        ======================+++++++================================= */}
       <section className="panel intro-panel">
-        
+
         <div className="hero-overlay"></div>
         <div className="content intro-content">
           {/* The welcome tag fades in from above */}
@@ -295,10 +295,10 @@ function App() {
 
           <div className="projects-tabs">
             <button
-              className={projectCategory === "systems" ? "active" : ""}
-              onClick={() => setProjectCategory("systems")}
+              className={projectCategory === "web" ? "active" : ""}
+              onClick={() => setProjectCategory("web")}
             >
-              Systems Analysis
+              Web Development
             </button>
 
             <button
@@ -309,19 +309,21 @@ function App() {
             </button>
 
             <button
-              className={projectCategory === "web" ? "active" : ""}
-              onClick={() => setProjectCategory("web")}
+              className={projectCategory === "systems" ? "active" : ""}
+              onClick={() => setProjectCategory("systems")}
             >
-              Web Development
+              Systems Analysis
             </button>
+
+           
           </div>
 
           <motion.h3
             className="projects-category-title" variants={textVariants}
           >
+            {projectCategory === "web" && "Web Development"}
             {projectCategory === "systems" && "Systems Analysis & Software Engineering"}
             {projectCategory === "bi" && "Business Intelligence & Data Analytics"}
-            {projectCategory === "web" && "Web Development"}
           </motion.h3>
 
           <ProjectCards

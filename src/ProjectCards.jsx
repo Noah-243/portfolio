@@ -38,7 +38,7 @@ const projectsData = {
       title: "Hackathon Award Winning Project",
       text: "Treatment of Post-Trauma by Virtual Reality.",
       buttons: [
-        { label: "View Prentaion", url: "https://1drv.ms/p/c/f1b8ecc419a4d495/IQBA7r8IWjuUSbtk-S3F1Er2Ae3bNZE3Fq5xWLH8J2hdBrE?e=b8tVry" }
+        { label: "View presentation", url: "https://1drv.ms/p/c/f1b8ecc419a4d495/IQBA7r8IWjuUSbtk-S3F1Er2Ae3bNZE3Fq5xWLH8J2hdBrE?e=b8tVry" }
       ]
     },
     {

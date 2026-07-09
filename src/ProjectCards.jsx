@@ -13,8 +13,8 @@ const projectsData = {
       title: "Smart Exam AI",
       text: "AI-powered Full Stack examination management platform developed with React, Node.js, Express and MongoDB. The system enables secure authentication, role-based access, exam creation, automatic grading, AI-assisted question generation and comprehensive dashboard analytics.",
       buttons: [
-        { label: "View Details", url: "details" },
-        { label: "Open App", url: "https://smart-exam-ai-frontend.onrender.com" }
+        { label: "Open App", url: "https://smart-exam-ai-frontend.onrender.com" },
+        { label: "View Details", url: "details" }
       ]
     },
     {
@@ -53,42 +53,42 @@ const projectsData = {
     }
   ],
 
-bi: [
-  {
-    title: "BI Seminar Project",
-    text: "Employee burnout research project: designed, specified, and built advanced interactive Tableau dashboards for presenting business insights and",
-    buttons: [
-      {
-        label: "View Tableau",
-        url: "https://public.tableau.com/views/FinalProjectStoryTelling/TheCompletePictureofEmployeeAttrition?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-      }
-    ]
-  },
-  {
-    title: "Personal Hypertension Predictive Analytics",
-    text: "Advanced predictive modeling and personal optimization tools empowering everyday individuals to forecast and manage home hypertension risks without requiring clinical expertis.",
-    buttons: [
-      {
-        label: "View Tableau",
-        url: "https://public.tableau.com/app/profile/noah.noah4408/viz/PerformanceresearchprojectNoah9/HypertensionRiskAssessmentManagement1"
-      }
-    ]
-  },
-  {
-    title: "Hypertension CDSS",
-    text: "Clinical Decision Support System (CDSS) for Hypertension Management (NICE Guidelines).",
-    buttons: [
-      {
-        label: "View Excel",
-        url: "https://1drv.ms/x/c/f1b8ecc419a4d495/IQAyQC8hs6L-S7Giqp33OaIVARTPLTqqeFqK30mvH0HjmS8?e=hyicPd"
-      },
-      {
-        label: "View Tableau",
-        url: "https://public.tableau.com/views/NISECDSSTableauFinalNoah/NICEHYPERTENSIONDECISIONSUPPORTSYSTEM2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-      }
-    ]
-  }
-]
+  bi: [
+    {
+      title: "BI Seminar Project",
+      text: "Employee burnout research project: designed, specified, and built advanced interactive Tableau dashboards for presenting business insights and",
+      buttons: [
+        {
+          label: "View Tableau",
+          url: "https://public.tableau.com/views/FinalProjectStoryTelling/TheCompletePictureofEmployeeAttrition?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        }
+      ]
+    },
+    {
+      title: "Personal Hypertension Predictive Analytics",
+      text: "Advanced predictive modeling and personal optimization tools empowering everyday individuals to forecast and manage home hypertension risks without requiring clinical expertis.",
+      buttons: [
+        {
+          label: "View Tableau",
+          url: "https://public.tableau.com/app/profile/noah.noah4408/viz/PerformanceresearchprojectNoah9/HypertensionRiskAssessmentManagement1"
+        }
+      ]
+    },
+    {
+      title: "Hypertension CDSS",
+      text: "Clinical Decision Support System (CDSS) for Hypertension Management (NICE Guidelines).",
+      buttons: [
+        {
+          label: "View Tableau",
+          url: "https://public.tableau.com/views/NISECDSSTableauFinalNoah/NICEHYPERTENSIONDECISIONSUPPORTSYSTEM2?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
+        },
+        {
+          label: "View Excel",
+          url: "https://1drv.ms/x/c/f1b8ecc419a4d495/IQAyQC8hs6L-S7Giqp33OaIVARTPLTqqeFqK30mvH0HjmS8?e=hyicPd"
+        }
+      ]
+    }
+  ]
 };
 
 /* ==========================================================
@@ -143,20 +143,20 @@ function ProjectCards({ projectCategory, onOpenSmartExamModal }) {
 
             {/* Render one or more buttons for the current project */}
             {project.buttons.map((button, btnIndex) => (
-  <button
-    key={btnIndex}
-    className="preview-btn"
-    onClick={() => {
-      if (button.url === "details") {
-        onOpenSmartExamModal();
-      } else {
-        window.open(button.url, "_blank");
-      }
-    }}
-  >
-    {button.label}
-  </button>
-))}
+              <button
+                key={btnIndex}
+                className="preview-btn"
+                onClick={() => {
+                  if (button.url === "details") {
+                    onOpenSmartExamModal();
+                  } else {
+                    window.open(button.url, "_blank");
+                  }
+                }}
+              >
+                {button.label}
+              </button>
+            ))}
 
           </div>
 

@@ -35,8 +35,8 @@ const projectsData = {
 
   systems: [
     {
-      title: "Hackathon Award Winning Project",
-      text: "Treatment of Post-Trauma by Virtual Reality.",
+      title: "PTSD VR Hackathon Solution",
+      text: "Hackathon project awarded second place for designing an innovative Virtual Reality (VR) solution for PTSD treatment. Included requirements analysis, system design, and presentation of an innovative healthcare concept.",
       buttons: [
         { label: "View Presentation", url: "https://1drv.ms/p/c/f1b8ecc419a4d495/IQBA7r8IWjuUSbtk-S3F1Er2Ae3bNZE3Fq5xWLH8J2hdBrE?e=b8tVry" }
       ]
@@ -56,7 +56,7 @@ const projectsData = {
   bi: [
     {
       title: "BI Seminar Project",
-      text: "Employee burnout research project: designed, specified, and built advanced interactive Tableau dashboards for presenting business insights and",
+      text: "Employee burnout prediction project involving complex workforce data analysis. Designed advanced Tableau dashboards to identify burnout factors, uncover organizational trends, and support data-driven decision-making.",
       buttons: [
         {
           label: "View Tableau",
@@ -66,7 +66,7 @@ const projectsData = {
     },
     {
       title: "Personal Hypertension Predictive Analytics",
-      text: "Advanced predictive modeling and personal optimization tools empowering everyday individuals to forecast and manage home hypertension risks without requiring clinical expertis.",
+      text: "Advanced predictive modeling and personalized analytics solution empowering individuals to forecast and manage hypertension risk at home. Designed to transform personal health data into meaningful insights without requiring clinical expertise.",
       buttons: [
         {
           label: "View Tableau",
@@ -76,7 +76,7 @@ const projectsData = {
     },
     {
       title: "Hypertension CDSS",
-      text: "Clinical Decision Support System (CDSS) for Hypertension Management (NICE Guidelines).",
+      text: "Interactive Clinical Decision Support System (CDSS) based on NICE Guidelines, developed using Tableau and Excel. Designed to assist healthcare professionals in hypertension assessment, diagnosis, and treatment decision-making.",
       buttons: [
         {
           label: "View Tableau",

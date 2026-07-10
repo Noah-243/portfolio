@@ -26,7 +26,7 @@ const projectsData = {
     },
     {
       title: "React Web App",
-      text: "Reusable components, clean layout and responsive web interface.",
+      text: "Additional projects are currently being finalized and will be published soon.",
       buttons: [
         { label: "View Project", url: "#" }
       ]
@@ -43,12 +43,12 @@ const projectsData = {
     },
     {
       title: "Software Architecture",
-      text: "Software architecture and system design project.",
+      text: "Additional projects are currently being finalized and will be published soon.",
       buttons: [{ label: "View Project", url: "#" }]
     },
     {
       title: "Systems Analysis Project",
-      text: "System analysis, requirements modeling and UML design.",
+      text: "Additional projects are currently being finalized and will be published soon..",
       buttons: [{ label: "View Project", url: "#" }]
     }
   ],

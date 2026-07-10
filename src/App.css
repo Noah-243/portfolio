@@ -602,7 +602,7 @@ body,
 }
 
 .resume-modal {
-  background: rgba(255, 255, 255, 0.7) !important;
+  background: rgba(255, 255, 255, 0.8) !important;
   color: #4b5563;
   width: 430px;
   max-width: 92%;

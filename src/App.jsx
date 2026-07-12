@@ -78,7 +78,7 @@ function App() {
        =========================================================== */}
       <div className="floating-icons">
 
-        <a href="tel:+972500000000" title="Phone">
+        <a href="tel:+972527041775" title="Phone">
           <FaPhone />
         </a>
 

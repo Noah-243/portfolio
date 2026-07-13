@@ -25,10 +25,17 @@ const projectsData = {
       ]
     },
     {
-      title: "React Web App",
-      text: "Additional projects are currently being finalized and will be published soon.",
+      title: "Rancid Tomatoes Movie Website",
+      text: "Full Stack movie review website built with Node.js, Express, JavaScript and SQLite. Features a searchable movie catalog, dynamic movie pages, critic reviews, audience scores and responsive design.",
       buttons: [
-        { label: "View Project", url: "#" }
+        {
+          label: "View Website",
+          url: "https://ex2b.onrender.com"
+        },
+        {
+          label: "View Source",
+          url: "https://github.com/Noah-243/ex2b"
+        }
       ]
     }
   ],

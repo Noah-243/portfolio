@@ -693,6 +693,7 @@ function App() {
                   <span>Node.js</span>
                   <span>Express.js</span>
                   <span>REST APIs</span>
+                  <span>Power Apps</span>
                 </div>
 
                 <h3>Databases</h3>
@@ -702,18 +703,16 @@ function App() {
                   <span>SQLite</span>
                 </div>
 
-                <h3>Business Intelligence</h3>
+                <h3>Business Intelligence & Data Analytics</h3>
                 <div className="skills-grid">
                   <span>Tableau</span>
-                  <span>Power Apps</span>
+                  <span>Python</span>
                   <span>Excel</span>
-                  <span>Data Analysis</span>
                   <span>Data Visualization</span>
                 </div>
 
                 <h3>Artificial Intelligence</h3>
                 <div className="skills-grid">
-                  <span>Python</span>
                   <span>Google Gemini API</span>
                   <span>ChatGPT</span>
                   <span>Claude</span>
@@ -723,8 +722,8 @@ function App() {
 
                 <h3>Systems Analysis</h3>
                 <div className="skills-grid">
-                  <span>Systems Analysis</span>
                   <span>Software Architecture</span>
+                  <span>Business Process Modeling</span>
                   <span>Requirements Analysis</span>
                   <span>Visual Paradigm</span>
                   <span>UML</span>

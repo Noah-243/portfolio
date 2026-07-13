@@ -28,6 +28,7 @@ body,
   z-index: 0;
   pointer-events: none;
 }
+
 /* ========================================================================== 
    2. SCROLL CONTAINER
    ========================================================================== */
@@ -284,7 +285,6 @@ body,
 /* ========================================================================== 
    5. PROJECTS SECTION
    ========================================================================== */
-   
 .projects-panel {
   background-color: rgba(27, 38, 59, 0.00) !important;
   color: #ffffff !important;
@@ -588,7 +588,67 @@ body,
 }
 
 /* ========================================================================== 
-   8. MODALS
+   8. Skills MODALS
+   ========================================================================== */
+
+.skills-section {
+  width: 100%;
+}
+
+.skills-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 22px 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(97, 127, 162, 0.18);
+  color: rgba(11, 12, 16, 0.9);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px 14px;
+
+  margin: 0 0 20px 0;
+  padding-left: 0;
+}
+
+.skills-grid span {
+  color: #5f6368;
+  font-size: 1rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.skills-grid span:not(:last-child)::after {
+  content: "•";
+  margin-left: 14px;
+  color: rgba(97, 127, 162, 0.8);
+}
+
+.smart-exam-modal .skills-section h3 {
+  max-width: none;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.smart-exam-modal .skills-subtitle {
+  max-width: 760px;
+  margin: 10px 0 30px;
+  text-align: left;
+  color: #5f6368;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+/* ========================================================================== 
+   9. MODALS
    ========================================================================== */
 .resume-modal-overlay {
   position: fixed;
@@ -675,7 +735,7 @@ body,
 }
 
 /* ========================================================================== 
-   9. ABOUT MODAL
+   10. ABOUT MODAL
    ========================================================================== */
 .about-content {
   display: flex;
@@ -721,7 +781,7 @@ body,
 }
 
 /* ========================================================================== 
-   10. SMART EXAM MODAL
+   11. SMART EXAM MODAL
    ========================================================================== */
 .smart-exam-modal ul {
   list-style: none;
@@ -765,6 +825,7 @@ body,
   line-height: 1.8;
   font-size: 1.05rem;
   text-align: justify;
+  color: #5f6368;
 }
 
 .project-awards {
@@ -802,12 +863,6 @@ body,
   line-height: 1.8;
 }
 
-.smart-exam-modal p {
-  text-align: left;
-  line-height: 1.8;
-  margin-bottom: 20px;
-}
-
 .smart-exam-modal {
   width: 650px;
   max-width: 90vw;
@@ -843,7 +898,7 @@ body,
 }
 
 /* ========================================================================== 
-   11. SMALL ANIMATIONS
+   12. SMALL ANIMATIONS
    ========================================================================== */
 .scroll-arrow {
   display: inline-block;
@@ -881,5 +936,472 @@ body,
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* ==========================================================================
+   13. MOBILE RESPONSIVE
+   Add this section at the very end of the CSS file.
+   ========================================================================== */
+
+@media (max-width: 768px) {
+
+  /* ----------------------------------------------------------
+     GENERAL LAYOUT
+     ---------------------------------------------------------- */
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    min-height: 100%;
+  }
+
+  .scroll-container {
+    width: 100%;
+    height: 100dvh;
+    scroll-snap-type: y proximity;
+  }
+
+  .panel {
+    width: 100%;
+    min-height: 100dvh;
+    height: auto;
+    padding: 80px 16px 50px;
+    overflow: hidden;
+  }
+
+  .content {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  /* ----------------------------------------------------------
+     FLOATING MENU AND SOCIAL ICONS
+     ---------------------------------------------------------- */
+
+  .floating-menu-btn {
+    top: 15px;
+    left: 15px;
+    padding: 8px 10px;
+    font-size: 1.25rem;
+  }
+
+  .floating-icons {
+    top: 15px;
+    right: 15px;
+    gap: 9px;
+  }
+
+  .floating-icons a {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    font-size: 1.05rem;
+  }
+
+  .side-menu {
+    width: min(280px, 82vw);
+    left: min(-280px, -82vw);
+    padding: 25px;
+    gap: 21px;
+  }
+
+  /* ----------------------------------------------------------
+     HERO SECTION
+     ---------------------------------------------------------- */
+
+  .intro-panel {
+    min-height: 100dvh;
+    padding-top: 95px;
+    padding-bottom: 55px;
+  }
+
+  .hero-text-frame,
+  .contact-frame {
+    width: 100%;
+    max-width: 100% !important;
+    margin: 0 auto 25px !important;
+    padding: 24px 18px 20px !important;
+    border-radius: 12px !important;
+  }
+
+  .hero-text-frame {
+    transform: none !important;
+  }
+
+  .welcome-tag {
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .welcome-text {
+    font-size: 0.95rem;
+    letter-spacing: 2.5px !important;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .welcome-line {
+    width: 35px;
+    min-width: 25px;
+  }
+
+  .main-title {
+    font-size: clamp(2.1rem, 10vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 14px !important;
+  }
+
+  .tech-subtitle {
+    font-size: 1rem;
+    line-height: 1.55;
+    letter-spacing: 0.4px;
+  }
+
+  .intro-description,
+  .intro-description p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.65;
+  }
+
+  .intro-description p:first-child {
+    letter-spacing: 1px;
+  }
+
+  .intro-buttons {
+    width: 100%;
+  }
+
+  .cta-primary-btn {
+    width: min(100%, 320px);
+    padding: 14px 20px;
+    transform: none;
+  }
+
+  .cta-primary-btn:hover {
+    transform: translateY(-2px) scale(1.02);
+  }
+
+  /* ----------------------------------------------------------
+     PROJECTS SECTION
+     ---------------------------------------------------------- */
+
+  .projects-panel {
+    min-height: 100dvh;
+    padding: 85px 14px 60px;
+  }
+
+  .projects-title {
+    font-size: 2.35rem;
+    line-height: 1.2;
+  }
+
+  .projects-tabs {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 18px 20px;
+    margin: 20px 0 30px;
+  }
+
+  .projects-tabs button {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .projects-category-title {
+    font-size: 1.35rem;
+    line-height: 1.4;
+    margin-bottom: 22px;
+  }
+
+  .projects-grid {
+    width: 100%;
+    gap: 22px;
+  }
+
+  .project-card {
+    width: min(100%, 360px);
+    height: auto;
+    min-height: 360px;
+    padding: 22px 24px !important;
+  }
+
+  .project-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .project-card p {
+    font-size: 0.98rem;
+    text-align: left;
+    word-spacing: normal;
+    hyphens: none;
+  }
+
+  /* ----------------------------------------------------------
+     CONTACT SECTION
+     ---------------------------------------------------------- */
+
+  .contact-panel {
+    min-height: 100dvh;
+    padding: 90px 16px 55px;
+  }
+
+  .contact-panel h2 {
+    font-size: 2.3rem;
+  }
+
+  .contact-panel p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 28px;
+  }
+
+  .contact-btn {
+    width: min(100%, 300px);
+  }
+
+  /* ----------------------------------------------------------
+     ALL MODALS
+     ---------------------------------------------------------- */
+
+  .resume-modal-overlay {
+    padding: 15px;
+    align-items: center;
+  }
+
+  .resume-modal,
+  .resume-modal.resume-modal-large,
+  .smart-exam-modal {
+    width: 100%;
+    max-width: 100%;
+    max-height: 90dvh;
+    border-radius: 14px;
+  }
+
+  .resume-modal {
+    padding: 24px 18px;
+  }
+
+  .resume-modal h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+
+  .resume-modal h3 {
+    font-size: 1.1rem;
+  }
+
+  .resume-modal p {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  .resume-modal button {
+    height: 50px;
+    font-size: 1rem;
+  }
+
+  .resume-preview {
+    height: 52dvh;
+  }
+
+  /* ----------------------------------------------------------
+     ABOUT MODAL
+     ---------------------------------------------------------- */
+
+  .about-modal {
+    padding: 24px 18px;
+    max-height: 90dvh;
+  }
+
+  .about-photo {
+    width: 125px;
+    height: 125px;
+  }
+
+  .about-content {
+    gap: 16px;
+  }
+
+  .about-content p {
+    width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.75;
+    text-align: left;
+  }
+
+  /* ----------------------------------------------------------
+     SMART EXAM AND SKILLS MODALS
+     ---------------------------------------------------------- */
+
+  .smart-exam-scroll {
+    max-height: 90dvh;
+    padding: 24px 18px;
+  }
+
+  .smart-exam-modal p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 0.98rem;
+    line-height: 1.7;
+    text-align: left;
+  }
+
+  .smart-exam-modal h3 {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0 10px;
+  }
+
+  .project-awards {
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 30px !important;
+  }
+
+  .smart-login-box {
+    margin: 15px 0 20px;
+    padding: 14px;
+  }
+
+  .smart-exam-modal button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .skills-section h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+
+  .smart-exam-modal .skills-subtitle {
+    width: 100%;
+    max-width: 100%;
+    margin: 8px 0 25px;
+    font-size: 0.98rem;
+    line-height: 1.65;
+  }
+
+  .skills-grid {
+    gap: 8px 10px;
+    margin-bottom: 18px;
+  }
+
+  .skills-grid span {
+    font-size: 0.92rem;
+    white-space: normal;
+  }
+
+  .skills-grid span:not(:last-child)::after {
+    margin-left: 10px;
+  }
+
+  /* ----------------------------------------------------------
+     CONTACT MODAL
+     ---------------------------------------------------------- */
+
+  .contact-modal-content {
+    width: 100%;
+  }
+
+  .contact-modal-content a {
+    max-width: 100%;
+    font-size: 1rem;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* ==========================================================================
+   14. SMALL MOBILE SCREENS
+   ========================================================================== */
+
+@media (max-width: 480px) {
+
+  .panel {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  .floating-icons {
+    right: 10px;
+  }
+
+  .floating-icons a {
+    width: 35px;
+    height: 35px;
+    font-size: 0.95rem;
+  }
+
+  .floating-menu-btn {
+    left: 10px;
+  }
+
+  .hero-text-frame,
+  .contact-frame {
+    padding: 22px 14px 18px !important;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .welcome-text {
+    font-size: 0.82rem;
+    letter-spacing: 1.5px !important;
+  }
+
+  .welcome-line {
+    width: 25px;
+  }
+
+  .projects-title,
+  .contact-panel h2 {
+    font-size: 2rem;
+  }
+
+  .projects-tabs {
+    gap: 16px;
+  }
+
+  .projects-tabs button {
+    font-size: 0.88rem;
+  }
+
+  .project-card {
+    width: 100%;
+    min-height: 350px;
+    padding: 20px !important;
+  }
+
+  .resume-modal-overlay {
+    padding: 10px;
+  }
+
+  .resume-modal {
+    padding: 22px 15px;
+  }
+
+  .smart-exam-scroll {
+    padding: 22px 15px;
+  }
+
+  .skills-grid {
+    gap: 7px 8px;
+  }
+
+  .skills-grid span {
+    font-size: 0.88rem;
+  }
+
+  .skills-grid span:not(:last-child)::after {
+    margin-left: 8px;
   }
 }

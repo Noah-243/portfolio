@@ -30,6 +30,7 @@ function App() {
   const [showContactModal, setShowContactModal] = useState(false);
   const [projectCategory, setProjectCategory] = useState("bi");
   const [showSmartExamModal, setShowSmartExamModal] = useState(false);
+  const [showSkillsModal, setShowSkillsModal] = useState(false);
 
   /* ==========================================================
    GLOBAL KEYBOARD EVENTS
@@ -53,6 +54,7 @@ function App() {
 
         setShowProjectModal(false);
         setSelectedProject(null);
+        setShowSkillsModal(false);
         setMenuOpen(false);
 
       }
@@ -175,7 +177,14 @@ function App() {
           Projects
         </a>
 
-        <a onClick={() => setMenuOpen(false)} href="#skills">
+        <a
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            setMenuOpen(false);
+            setShowSkillsModal(true);
+          }}
+        >
           Skills
         </a>
 
@@ -315,7 +324,7 @@ function App() {
               Systems Analysis
             </button>
 
-           
+
           </div>
 
           <motion.h3
@@ -661,6 +670,89 @@ function App() {
           </div>
         )
       }
+      {showSkillsModal && (
+        <div className="resume-modal-overlay">
+          <div className="resume-modal resume-modal-large smart-exam-modal">
+
+
+            <div className="smart-exam-scroll">
+              <h2>Technical Skills</h2>
+              <div className="skills-section">
+
+                <p className="skills-subtitle">
+                  Technologies and tools applied across full-stack development,
+                  business intelligence, systems analysis and AI-powered solutions.
+                </p>
+
+                <h3>Web Development</h3>
+                <div className="skills-grid">
+                  <span>React</span>
+                  <span>JavaScript</span>
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>Node.js</span>
+                  <span>Express.js</span>
+                  <span>REST APIs</span>
+                </div>
+
+                <h3>Databases</h3>
+                <div className="skills-grid">
+                  <span>MongoDB</span>
+                  <span>SQL</span>
+                  <span>SQLite</span>
+                </div>
+
+                <h3>Business Intelligence</h3>
+                <div className="skills-grid">
+                  <span>Tableau</span>
+                  <span>Power Apps</span>
+                  <span>Excel</span>
+                  <span>Data Analysis</span>
+                  <span>Data Visualization</span>
+                </div>
+
+                <h3>Artificial Intelligence</h3>
+                <div className="skills-grid">
+                  <span>Python</span>
+                  <span>Google Gemini API</span>
+                  <span>ChatGPT</span>
+                  <span>Claude</span>
+                  <span>Perplexity</span>
+                  <span>Prompt Engineering</span>
+                </div>
+
+                <h3>Systems Analysis</h3>
+                <div className="skills-grid">
+                  <span>Systems Analysis</span>
+                  <span>Software Architecture</span>
+                  <span>Requirements Analysis</span>
+                  <span>Visual Paradigm</span>
+                  <span>UML</span>
+                </div>
+
+                <h3>Enterprise Systems</h3>
+                <div className="skills-grid">
+                  <span>Priority ERP</span>
+                  <span>CRM</span>
+                  <span>PDM</span>
+                  <span>WMS</span>
+                  <span>MRP</span>
+                  <span>MES</span>
+                </div>
+
+              </div>
+
+              <button
+                className="close-modal"
+                onClick={() => setShowSkillsModal(false)}
+              >
+                Close
+              </button>
+
+            </div>
+          </div>
+        </div>
+      )}
 
     </div >
   );

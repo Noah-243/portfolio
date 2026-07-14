@@ -1027,6 +1027,11 @@ body,
 
   background: rgba(11, 12, 16, 0.3) !important;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.7) !important;
+
+  transform: translateZ(0);
+  will-change: backdrop-filter, -webkit-backdrop-filter;
+  isolation: isolate;
+  
   backdrop-filter: blur(2px) !important;
   -webkit-backdrop-filter: blur(2px) !important;
 

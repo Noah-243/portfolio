@@ -131,8 +131,8 @@ body,
   border-radius: 12px !important;
   max-width: 850px !important;
   margin: 0 auto 40px auto !important;
-  backdrop-filter: blur(2px) !important;
-  -webkit-backdrop-filter: blur(2px) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
   display: block !important;
   position: relative;
   overflow: hidden;

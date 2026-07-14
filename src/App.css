@@ -125,31 +125,17 @@ body,
 
 .hero-text-frame,
 .contact-frame {
-  /* Layout & Sizing */
-  width: 100%;
-  max-width: 100% !important;
-  margin: 0 auto 25px !important;
-  padding: 24px 18px 20px !important;
+  background: rgba(11, 12, 16, 0.3) !important;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7) !important;
+  padding: 30px 40px 20px 30px !important;
+  border-radius: 12px !important;
+  max-width: 850px !important;
+  margin: 0 auto 40px auto !important;
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
   display: block !important;
   position: relative;
   overflow: hidden;
-
-  /* Styling & Borders */
-  border-radius: 12px !important;
-  background: rgba(11, 12, 16, 0.3) !important;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7) !important;
-
-  /* Performance & Rendering Fixes */
-  transform: translateZ(0);
-  will-change: backdrop-filter, -webkit-backdrop-filter;
-  isolation: isolate;
-  
-  /* CRITICAL FIX FOR PRODUCTION BUILD:
-    We separate the prefixed version and standard version.
-    Using standard syntax ensures the CSS minifier won't strip it.
-  */
-  -webkit-backdrop-filter: blur(2px) !important;
-  backdrop-filter: blur(2px) !important;
 }
 
 .hero-text-frame {
@@ -1049,6 +1035,10 @@ body,
   display: block !important;
   position: relative;
   overflow: hidden;
+}
+
+.hero-text-frame {
+  transform: none !important;
 }
 
   .welcome-tag {

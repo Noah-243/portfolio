@@ -1031,9 +1031,13 @@ body,
   transform: translateZ(0);
   will-change: backdrop-filter, -webkit-backdrop-filter;
   isolation: isolate;
-  
-  backdrop-filter: blur(2px) !important;
+
+
   -webkit-backdrop-filter: blur(2px) !important;
+  backdrop-filter: blur(2px) !important;
+  
+ 
+  filter: drop-shadow(0 0 0 transparent);
 
   display: block !important;
   position: relative;

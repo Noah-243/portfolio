@@ -1019,7 +1019,7 @@ body,
 
 .hero-text-frame,
 .contact-frame {
-  width: 100%;
+  width: calc(100% - 35px);
   max-width: 100% !important;
   margin: 0 auto 25px !important;
   padding: 24px 18px 20px !important;

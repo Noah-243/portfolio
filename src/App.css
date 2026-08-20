@@ -132,8 +132,8 @@ body,
   max-width: 850px !important;
   margin: 0 auto 40px auto !important;
 
-  -webkit-backdrop-filter: blur(2px) !important;
-  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(1px) !important;
+  backdrop-filter: blur(1px) !important;
   
   display: block !important;
   position: relative;

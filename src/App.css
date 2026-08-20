@@ -529,8 +529,10 @@ body,
   height: 100vh;
   z-index: 4000;
   background: rgba(11, 12, 16, 0.30);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(12px);
+  
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+
   padding: 30px;
   display: flex;
   flex-direction: column;
